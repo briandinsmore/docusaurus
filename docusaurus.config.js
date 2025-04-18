@@ -60,7 +60,7 @@ const config = {
         title: 'MichMesh',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/michmesh.jpeg',
+          src: 'img/michmesh-logo.jpeg',
         },
         items: [
         ],
