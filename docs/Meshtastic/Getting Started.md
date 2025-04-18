@@ -14,6 +14,7 @@ You likely do *not* want to use the `msh/US` topic, so let's setup the `msh/US/M
 2. go to LoRa, enable `Ok to MQTT`, click `Send`
 3. Click `MQTT`
 4. Enable `MQTT`
+* If you want to use the MichMesh MQTT server (which is connected to the public Meshtastic MQTT server), change the server name to `mqtt.michmesh.net`. The username/password are the same - `meshdev`/`large4cats`
 5. Scroll to root Topic
 6. Paste `msh/US/MI`
 7. Enable Proxy to Client - skip this step if you're using a network connected node like and ESP32 on WiFi or a POE powered WisBlock (This adds a internet connection to the node if you have only Bluetooth connection and not wifi.)
