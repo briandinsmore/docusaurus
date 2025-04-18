@@ -24,8 +24,7 @@ The node will now reboot.
 
 1. iOS: Go to >config>channels - Android: ☰ > Radio Configuration > channels
 2. Click Primary/Default/LongFast Channel
-3. Enable Uplink (if you want to show up on the maps)
-***(Only do the above after setting the msh/US/MI topic so you arent spammed with `msh/US` messages.***
+3. Enable Uplink (if you want to show up on the maps) 
 4. Enable Position if you want to send your location out over the mesh.
 5. click Save
 
