@@ -1,3 +1,6 @@
+## Wait a minute, this is confusing!
+Yeah, there are some terms that get used differently depending on where they are used. Freq channels are also called channel slots or just channels, but general chat channels are also called channels? Yeah, it's a mess. Organic growth in the app and documentation have made things confusing. Dont worry about asking questions if you are unsure - we all had to figure it out and most of us are pretty friendly about answering questions.
+
 ## Do I need to change frequency/channel number in order to connect with other people?
 Most likely, no. The standard `LongFast` channel preset will cover your area. Some people are playing with using faster (shorter range) and slower (longer range) channels, but this is usually coordinated and not used long term.
 
@@ -13,7 +16,7 @@ You likely do *not* want to use the `msh/US` topic, so let's setup the `msh/US/M
 4. Enable MQTT
 5. Scroll to root Topic
 6. Paste `msh/US/MI`
-7. Enable Proxy to Client (This adds a internet connection to the node if you have only Bluetooth connection and not wifi.)
+7. Enable Proxy to Client - skip this step if you're using a network connected node like and ESP32 on WiFi or a POE powered WisBlock (This adds a internet connection to the node if you have only Bluetooth connection and not wifi.)
 8. Click save
 The node will now reboot. 
 
