@@ -1,3 +1,6 @@
+## Do I need to change frequency/channel number in order to connect with other people?
+Most likely, no. The standard `LongFast` channel preset will cover your area. Some people are playing with using faster (shorter range) and slower (longer range) channels, but this is usually coordinated and not used long term.
+
 ## MQTT
 If you dont already have an MQTT gateway on your mesh or if you are a mobile node, you may want to setup an MQTT gateway.
 You likely do *not* want to use the `msh/US` topic, so let's setup the `msh/US/MI` topic. 
@@ -32,6 +35,7 @@ The node will now reboot.
 5. PSK: `MA==` - this is case sensitive, it *must* be uppercase and without spaces.
 6. Enable Uplink/Downlink 
 7. Enable Position if you want to send your location out over the mesh.
+8. click save
 
 > WMI
 1. iOS: Go to >config>channels - Android: ☰ > Radio Configuration > channels
@@ -41,6 +45,7 @@ The node will now reboot.
 5. PSK: `MA==` - this is case sensitive, it *must* be uppercase and without spaces.
 6. Enable Uplink/Downlink 
 7. Enable Position if you want to send your location out over the mesh.
+8. click save
 
 > Muskegon
 1. iOS: Go to >config>channels - Android: ☰ > Radio Configuration > channels
@@ -50,6 +55,9 @@ The node will now reboot.
 5. PSK: `MA==` - this is case sensitive, it *must* be uppercase and without spaces.
 6. Enable Uplink/Downlink 
 7. Enable Position if you want to send your location out over the mesh.
+8. click save
 
+#### After channel config
+click `Send` to push new channels to node.
 
 
