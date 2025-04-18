@@ -11,9 +11,9 @@ You likely do *not* want to use the `msh/US` topic, so let's setup the `msh/US/M
 ### To Join the Michigan Meshtastic MQTT Topic
 
 1. iOS: Go to >config>Module configuration - Android: ☰ > Radio Configuration
-2. go to LoRa, enable `Ok to MQTT`
-3. Click MQTT
-4. Enable MQTT
+2. go to LoRa, enable `Ok to MQTT`, click `Send`
+3. Click `MQTT`
+4. Enable `MQTT`
 5. Scroll to root Topic
 6. Paste `msh/US/MI`
 7. Enable Proxy to Client - skip this step if you're using a network connected node like and ESP32 on WiFi or a POE powered WisBlock (This adds a internet connection to the node if you have only Bluetooth connection and not wifi.)
@@ -23,7 +23,7 @@ The node will now reboot.
 ### Once it's up, it's time to enable uplink/downlink on your channels.
 
 1. iOS: Go to >config>channels - Android: ☰ > Radio Configuration > channels
-2. Click Primary Channel
+2. Click Primary/Default/LongFast Channel
 3. Enable Uplink (if you want to show up on the maps)
 ***(Only do the above after setting the msh/US/MI topic so you arent spammed with `msh/US` messages.***
 4. Enable Position if you want to send your location out over the mesh.

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Getting Started | MichMesh</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://michmesh.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://michmesh.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://michmesh.com/docs/Meshtastic/Getting Started"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Getting Started | MichMesh"><meta data-rh="true" name="description" content="Wait a minute, this is confusing!"><meta data-rh="true" property="og:description" content="Wait a minute, this is confusing!"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://michmesh.com/docs/Meshtastic/Getting Started"><link data-rh="true" rel="alternate" href="https://michmesh.com/docs/Meshtastic/Getting Started" hreflang="en"><link data-rh="true" rel="alternate" href="https://michmesh.com/docs/Meshtastic/Getting Started" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.15cbc4ab.css">
-<script src="/assets/js/runtime~main.d0bad5cd.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.145846fc.js" defer="defer"></script>
 <script src="/assets/js/main.a4c78ccf.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,9 +18,9 @@ You likely do <em>not</em> want to use the <code>msh/US</code> topic, so let&#x2
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="to-join-the-michigan-meshtastic-mqtt-topic">To Join the Michigan Meshtastic MQTT Topic<a href="#to-join-the-michigan-meshtastic-mqtt-topic" class="hash-link" aria-label="Direct link to To Join the Michigan Meshtastic MQTT Topic" title="Direct link to To Join the Michigan Meshtastic MQTT Topic">​</a></h3>
 <ol>
 <li>iOS: Go to &gt;config&gt;Module configuration - Android: ☰ &gt; Radio Configuration</li>
-<li>go to LoRa, enable <code>Ok to MQTT</code></li>
-<li>Click MQTT</li>
-<li>Enable MQTT</li>
+<li>go to LoRa, enable <code>Ok to MQTT</code>, click <code>Send</code></li>
+<li>Click <code>MQTT</code></li>
+<li>Enable <code>MQTT</code></li>
 <li>Scroll to root Topic</li>
 <li>Paste <code>msh/US/MI</code></li>
 <li>Enable Proxy to Client - skip this step if you&#x27;re using a network connected node like and ESP32 on WiFi or a POE powered WisBlock (This adds a internet connection to the node if you have only Bluetooth connection and not wifi.)</li>
@@ -30,7 +30,7 @@ The node will now reboot.</li>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="once-its-up-its-time-to-enable-uplinkdownlink-on-your-channels">Once it&#x27;s up, it&#x27;s time to enable uplink/downlink on your channels.<a href="#once-its-up-its-time-to-enable-uplinkdownlink-on-your-channels" class="hash-link" aria-label="Direct link to Once it&#x27;s up, it&#x27;s time to enable uplink/downlink on your channels." title="Direct link to Once it&#x27;s up, it&#x27;s time to enable uplink/downlink on your channels.">​</a></h3>
 <ol>
 <li>iOS: Go to &gt;config&gt;channels - Android: ☰ &gt; Radio Configuration &gt; channels</li>
-<li>Click Primary Channel</li>
+<li>Click Primary/Default/LongFast Channel</li>
 <li>Enable Uplink (if you want to show up on the maps)
 <em><strong>(Only do the above after setting the msh/US/MI topic so you arent spammed with <code>msh/US</code> messages.</strong></em></li>
 <li>Enable Position if you want to send your location out over the mesh.</li>
