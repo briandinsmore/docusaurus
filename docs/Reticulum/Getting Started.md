@@ -4,7 +4,9 @@
 ### load the new python venv
 `. ~/reticulum/bin/activate`
 ### install rns, lxmfd 
-```pip install --upgrade rns lxmf```
+```
+pip install --upgrade rns lxmf
+```
 Start rnsd to generate the config files, then ctrl-c out:
 ```
 rnsd
