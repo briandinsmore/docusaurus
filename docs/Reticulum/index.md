@@ -1,3 +1,4 @@
+# Reticulum
 ### What is it?
 Reticulum Network Stack is just as it says on the tin. Where the other players in the open source LoRa scene are mainly chat tools, Reticulum is a network stack with a chat protocol (as well as other protocols). 
 ### Why create another mesh? 
