@@ -4,7 +4,11 @@
 ### load the new python venv
 `. ~/reticulum/bin/activate`
 ### install rns, lxmfd 
-`pip install --upgrade rns lxmf`
+```pip install --upgrade rns lxmf```
+Start rnsd to generate the config files, then ctrl-c out:
+```rnsd
+^c
+``` 
 ### edit ~/.reticulum/config 
 Use the following to configure your machine as a bridge to all on the same subnet with the michmesh test net. This test net is also connected to the Chicago test net, which is connected to a European test net. The connection to the euro net will likely be dropped once we get a critical mass of services running.
 ```
@@ -32,6 +36,7 @@ Use the following to configure your machine as a bridge to all on the same subne
     selected_interface_mode = 1
     configured_bitrate = None
 ```
+## Clients
 ### nomadnet
 If you want to install the console based nomadnet:
 `pip install nomadnet`
@@ -50,6 +55,7 @@ To setup TCP connection to the test net:
 - x out of the config 
 - restart Sideband.
 You should now be seeing things show up in the announce stream.
+## Radio interfaces
 ### LoRa
 Reticulum is not like other meshes - the LoRa node acts more like a [TNC](https://en.wikipedia.org/wiki/Terminal_node_controller) - at current time, you need to install the [rnode firmare](https://liamcottle.github.io/rnode-flasher/) and create an [interface in your config](https://reticulum.network/manual/interfaces.html#rnode-lora-interface).
 [We use the common settings for the US.](https://github.com/markqvist/Reticulum/wiki/Popular-RNode-Settings#united-states)
@@ -57,17 +63,18 @@ For Sideband, connect to the rnode via bluetooth, then enable `Connect via RNode
 For rns/nomadnet/Meshchat, add the following connection to your ~/.reticulum/config
 ```
 [[RnodeUSB]]
-    type = RNodeInterface
-    interface_enabled = true
-    port = /path/to/usb/or/bluetooh/port
-    frequency = 914875000
-    bandwidth = 125000
-    txpower = 20
-    spreadingfactor = 8
-    codingrate = 5
-    name = RnodeUSB
-    selected_interface_mode = 1
-    configured_bitrate = None
+  type = RNodeInterface
+  interface_enabled = true
+  port = /path/to/usb/or/bluetooh/port
+  frequency = 914875000
+  bandwidth = 125000
+  txpower = 20
+  spreadingfactor = 8
+  codingrate = 5
+  name = RnodeUSB
+  selected_interface_mode = 1
+  configured_bitrate = None
+  mode = boundary
 ```
 ### HF FreeDV-TNC2 6.792mhz - in flux
 Connect your radio to your computer using whatever radio interface you choose.
@@ -81,5 +88,6 @@ add the following to your ~/.reticulum/config interfaces
   kiss_framing = True
   target_host = 127.0.0.1
   target_port = 8001
+  mode = boundary
 ```
 
