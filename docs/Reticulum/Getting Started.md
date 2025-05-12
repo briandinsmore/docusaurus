@@ -6,7 +6,8 @@
 ### install rns, lxmfd 
 ```pip install --upgrade rns lxmf```
 Start rnsd to generate the config files, then ctrl-c out:
-```rnsd
+```
+rnsd
 ^c
 ``` 
 ### edit ~/.reticulum/config 
